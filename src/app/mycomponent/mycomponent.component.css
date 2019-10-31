@@ -1,0 +1,35 @@
+p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    color: tomato;
+}
+h1{
+    color: yellowgreen;
+}
+.namefirst, .namelast{
+    color: pink;
+}
+.nameNeCh{
+    background-color: teal;
+}
+.nameCh{
+    background-color: black;
+}
+img{
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+}
+.className1{
+    background-color: cadetblue;
+    color: darkblue;
+    font-size: 24px;
+    padding: 15px;
+}
+.className2{
+    background-color: chartreuse;
+}
+.namePer1{
+    display: none;;
+}

@@ -1,0 +1,30 @@
+<p>{{name}}, mycomponent works!</p>
+<h1>Время {{data}}</h1>
+<p *ngFor="let peremennay of list; let i = index; let pFirst = first; let pLast = last; let pNeCh = even; let pCh = odd;" [ngClass]="{namefirst: pFirst, namelast: pLast, nameNeCh: pNeCh, nameCh: pCh}">{{i+1}} {{peremennay}}</p>
+<div *ngIf="!showBlok; else namePer">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi sint deleniti porro praesentium beatae.
+</div>
+<ng-template #namePer>
+     else 
+     Lorem ipsum dolor sit amet.
+</ng-template>
+<br>
+<button *ngIf="ShowHide" (click)="ShowHideFun()">Add</button>
+<button *ngIf="!ShowHide" (click)="ShowHideFun()">delete</button>
+<div *ngIf="!ShowHide">
+    <img src="https://i.pinimg.com/736x/2d/dc/25/2ddc25914e2ae0db5311ffa41781dda1.jpg" alt="">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste ullam optio dolor. Optio corrupti qui rerum dolorem illum architecto quis.
+</div>
+<br>
+<input type="text" [(ngModel)]="text">
+<p>{{text}}</p>
+
+<div [ngClass]="{className1: true}">
+    <h3>My title</h3>
+    <p [ngClass]="{className2: true}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id, qui aut incidunt itaque aperiam.</p>
+</div>
+<div [ngClass]="{namePer1: name2}">
+    <h2>Chto-to takoe</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae in iste.</p>
+</div>
+<button (click)="nameFunction()">text</button>
